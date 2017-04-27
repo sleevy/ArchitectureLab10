@@ -2,21 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="edu.georgiasouthern.cr04956.architecturelab10.MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/historyPlot"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="Real-time Data"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textStyle="bold" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:renderMode="use_background_thread" />
 
     <com.androidplot.xy.XYPlot
         android:id="@+id/myPlot"
@@ -24,6 +23,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:layout_editor_absoluteY="8dp"
+        app:renderMode="use_background_thread" />
 
 </LinearLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ArchitectureLab10</string>
+    <string name="real_time_data">Real-time Data</string>
 </resources>
